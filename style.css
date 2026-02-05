@@ -1,48 +1,72 @@
+/* ОБЩИЕ СТИЛИ */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(135deg, #ffb6c1, #ffd1dc);
+  font-family: 'Arial', sans-serif;
+  background: #ffe6ee; /* милый розовый фон */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Arial', sans-serif;
+  height: 100vh;
 }
 
-.box {
+/* Контейнер */
+.container {
   background: white;
-  padding: 35px 30px;
   border-radius: 25px;
+  padding: 25px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-h1 {
-  margin-bottom: 25px;
-}
-
-.buttons {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px; /* чтобы на телефоне было красиво */
   position: relative;
-  height: 60px;
 }
 
+/* Заголовок */
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Кнопки */
 button {
-  font-size: 18px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   border-radius: 30px;
   border: none;
+  font-size: 18px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .yes {
   background: #ff4d6d;
   color: white;
+  margin-right: 10px;
 }
 
 .no {
   background: #ddd;
-  position: absolute;
 }
+
+/* Стикеры */
+.sticker {
+  position: absolute;
+  width: 60px;
+  transition: all 0.3s ease;
+}
+
+.bear1 {
+  bottom: 10px;
+  left: 10px;
+}
+
+.bear2 {
+  bottom: 10px;
+  right: 10px;
+}
+
